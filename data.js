@@ -1,7 +1,47 @@
 var APP_DATA = {
   "scenes": [
     {
-      "id": "0-dining-room",
+      "id": "0-wash",
+      "name": "Wash",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        }
+      ],
+      "faceSize": 1024,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": 1.1870745482140599,
+          "pitch": 0.3223355733291502,
+          "rotation": 0,
+          "target": "6-work-area"
+        },
+        {
+          "yaw": 1.3659036707798293,
+          "pitch": 0.10857849965208999,
+          "rotation": 0,
+          "target": "3-kitchen-view_01"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "1-dining-room",
       "name": "Dining Room",
       "levels": [
         {
@@ -30,28 +70,28 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": 0.08628439634277818,
-          "pitch": 0.1670105591009463,
+          "yaw": 0.11679851599864222,
+          "pitch": 0.17305098862613733,
           "rotation": 0,
-          "target": "1-dining-table"
+          "target": "2-dining-table"
         },
         {
-          "yaw": -1.7310886359964481,
-          "pitch": 0.5347713941843502,
+          "yaw": -1.7136639922879855,
+          "pitch": 0.5517241398291137,
           "rotation": 0,
-          "target": "4-wash-counter"
+          "target": "5-wash-counter"
         },
         {
-          "yaw": -1.5578262030453125,
-          "pitch": 0.11746789700056581,
+          "yaw": -1.5398182897961412,
+          "pitch": 0.09760271401251508,
           "rotation": 0,
-          "target": "2-kitchen-view_02"
+          "target": "4-kitchen-view_02"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "1-dining-table",
+      "id": "2-dining-table",
       "name": "Dining Table",
       "levels": [
         {
@@ -80,66 +120,16 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": -2.652915994746385,
-          "pitch": 0.2809792062350702,
+          "yaw": -3.1363261499126978,
+          "pitch": 0.18197984352850227,
           "rotation": 0,
-          "target": "4-wash-counter"
+          "target": "1-dining-room"
         },
         {
-          "yaw": 3.134587763151817,
-          "pitch": 0.34646494182647203,
+          "yaw": -2.601561325193522,
+          "pitch": 0.25880757812223365,
           "rotation": 0,
-          "target": "0-dining-room"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "2-kitchen-view_02",
-      "name": "Kitchen View_02",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 2048,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": -3.0679661622170205,
-          "pitch": 0.14828827757776608,
-          "rotation": 0,
-          "target": "5-work-area"
-        },
-        {
-          "yaw": 2.7561491257194533,
-          "pitch": 0.22484062983638253,
-          "rotation": 0,
-          "target": "3-kitchen-view_01"
-        },
-        {
-          "yaw": 1.9697749619954825,
-          "pitch": 0.24576945098153757,
-          "rotation": 0,
-          "target": "4-wash-counter"
+          "target": "5-wash-counter"
         }
       ],
       "infoHotspots": []
@@ -168,34 +158,84 @@ var APP_DATA = {
       ],
       "faceSize": 2048,
       "initialViewParameters": {
-        "pitch": 0,
         "yaw": 0,
-        "fov": 1.5707963267948966
+        "pitch": 0,
+        "fov": 1.2193128577747672
       },
       "linkHotspots": [
         {
-          "yaw": -1.1122235175778208,
-          "pitch": 0.33515656390588333,
+          "yaw": -1.1409840386908563,
+          "pitch": 0.31822760901534153,
           "rotation": 0,
-          "target": "5-work-area"
+          "target": "6-work-area"
         },
         {
-          "yaw": 0.546854258148894,
-          "pitch": 0.2686123658213422,
+          "yaw": 0.6132193945674338,
+          "pitch": 0.2442311110755533,
           "rotation": 0,
-          "target": "2-kitchen-view_02"
+          "target": "4-kitchen-view_02"
         },
         {
-          "yaw": 1.4683797978882893,
-          "pitch": 0.3385178994915279,
+          "yaw": 1.4544958116416637,
+          "pitch": 0.4090431085816668,
           "rotation": 0,
-          "target": "4-wash-counter"
+          "target": "5-wash-counter"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "4-wash-counter",
+      "id": "4-kitchen-view_02",
+      "name": "Kitchen View_02",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 2048,
+      "initialViewParameters": {
+        "yaw": -2.130701035848883,
+        "pitch": 0,
+        "fov": 1.2193128577747672
+      },
+      "linkHotspots": [
+        {
+          "yaw": 1.976431714421981,
+          "pitch": 0.31465820832334046,
+          "rotation": 0,
+          "target": "5-wash-counter"
+        },
+        {
+          "yaw": 2.748439125830596,
+          "pitch": 0.235049139158507,
+          "rotation": 0,
+          "target": "3-kitchen-view_01"
+        },
+        {
+          "yaw": -3.04908858133118,
+          "pitch": 0.14888049950681292,
+          "rotation": 0,
+          "target": "6-work-area"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "5-wash-counter",
       "name": "Wash Counter",
       "levels": [
         {
@@ -224,28 +264,28 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": 0.6163032282049414,
-          "pitch": 0.11163811197498674,
+          "yaw": 0.6264588437816982,
+          "pitch": 0.10876249896992007,
           "rotation": 0,
-          "target": "1-dining-table"
+          "target": "2-dining-table"
         },
         {
-          "yaw": 1.6467120467068135,
-          "pitch": 0.5306747935463854,
+          "yaw": 1.5509701069967434,
+          "pitch": 0.4836200351365143,
           "rotation": 0,
-          "target": "0-dining-room"
+          "target": "1-dining-room"
         },
         {
-          "yaw": -1.3369982671406149,
-          "pitch": 0.13695438778809788,
+          "yaw": -1.3256485845620425,
+          "pitch": 0.1713444423411783,
           "rotation": 0,
-          "target": "2-kitchen-view_02"
+          "target": "4-kitchen-view_02"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "5-work-area",
+      "id": "6-work-area",
       "name": "Work Area",
       "levels": [
         {
@@ -274,8 +314,14 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": 1.2241251474090706,
-          "pitch": 0.21553123262949647,
+          "yaw": 3.0080514638341453,
+          "pitch": 0.3139766136613158,
+          "rotation": 0,
+          "target": "0-wash"
+        },
+        {
+          "yaw": 1.2216377882406952,
+          "pitch": 0.4359561381313526,
           "rotation": 0,
           "target": "3-kitchen-view_01"
         }
@@ -283,7 +329,7 @@ var APP_DATA = {
       "infoHotspots": []
     }
   ],
-  "name": "Project 360",
+  "name": "360",
   "settings": {
     "mouseViewMode": "qtvr",
     "autorotateEnabled": true,
